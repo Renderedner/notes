@@ -1,0 +1,21 @@
+;; «.pymongo-tutorial»	(to "pymongo-tutorial")
+
+;;https://pymongo.readthedocs.io/en/stable/
+;; «pymongo-tutorial»  (to ".pymongo-tutorial")
+(find-html2pdf-links "pymongo-tutorial" "https://pymongo.readthedocs.io/en/stable/tutorial.html")
+(code-pdf-page  "pymongo-tutorial" "$S/https/pymongo.readthedocs.io/en/stable/tutorial.html.pdf")
+(code-pdf-text8 "pymongo-tutorial" "$S/https/pymongo.readthedocs.io/en/stable/tutorial.html.pdf")
+(page-utils-mode 1)
+; (find-pymongo-tutorialtext 1)
+; (find-pymongo-tutorialtext 1 "This tutorial also assumes that a MongoDB instance is running on the default host and port")
+; (find-pymongo-tutorialtext 1 "Making a Connection with MongoClient¶")
+; (find-pymongo-tutorialtext 1 "Getting a Database¶")
+; (find-pymongo-tutorialpage 1  "A single instance of MongoDB can support multiple independent databases.")
+;                               (find-~ "arch-mongo-pages.e" "mongosh-commands" "To create a new database")
+
+; (find-pymongo-tutorialpage 2 )
+; (find-pymongo-tutorialpage 3 )
+; (find-pymongo-tutorialpage 4 )
+; (find-pymongo-tutorialpage 5 )
+; (find-pymongo-tutorialpage 6 )
+; (find-pymongo-tutorialpage 7 )
