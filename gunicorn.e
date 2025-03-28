@@ -1,3 +1,5 @@
+# «logging»  (to ".logging")
+
 ; (find-daily "04-11-2024.org" ".gunicorn-docs")
 ; (find-gunicorndoc  "index")
 
@@ -13,3 +15,14 @@
 ; (find-gunicorndocrfile                          "../../examples/nginx.conf")
 
 ; http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering [Defaul proxy buffering on.]
+
+
+https://docs.gunicorn.org/en/latest/settings.html#logging
+
+# «.logging»	(to "logging")
+# (find-gunicorndoc "settings#logging")
+# (find-gunicorndocr "settings" "Logging")
+# (find-gunicorndocr "settings" "Logging" "--access-logfile FILE")
+# (find-gunicorndocr "settings" "Logging" "--error-logfile FILE")
+
+

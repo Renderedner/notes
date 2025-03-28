@@ -7,6 +7,56 @@
 ;  
 ; «aosabook-nginx»  (to ".aosabook-nginx")
 ; «nginx-beginners-guide»  (to ".nginx-beginners-guide")
+; «archlinuxnginx»  (to ".archlinuxnginx")
+
+
+
+
+
+
+
+
+
+; «.archlinuxnginx»	(to "archlinuxnginx")
+; (find-html2pdf-links "archlinuxnginx" "https://wiki.archlinux.org/title/Nginx")
+(code-pdf-page  "archlinuxnginx" "$S/https/wiki.archlinux.org/title/Nginx.pdf")
+(code-pdf-text8 "archlinuxnginx" "$S/https/wiki.archlinux.org/title/Nginx.pdf")
+(page-utils-mode 1)
+# (find-archlinuxnginxpage 1)
+# (find-archlinuxnginxtext 1)
+# (find-archlinuxnginxtext 1 "3 Configuration")
+# (find-archlinuxnginxpage 1 "3 Configuration" "The main configuration file is located at /etc/nginx/nginx.conf")
+# (find-archlinuxnginxpage 2)
+# (find-archlinuxnginxpage 3)
+# (find-archlinuxnginxpage 4)
+# (find-archlinuxnginxpage 5)
+# (find-archlinuxnginxpage 6)
+# (find-archlinuxnginxpage 7)
+# (find-archlinuxnginxpage 8)
+# (find-archlinuxnginxpage 9)
+# (find-archlinuxnginxpage 10)
+# (find-archlinuxnginxpage 11)
+# (find-archlinuxnginxpage 12)
+# (find-archlinuxnginxpage 13)
+# (find-archlinuxnginxtext 14 "5.8.11 /var/log/nginx")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ; «.aosabook-nginx»	(to "aosabook-nginx")
 ; (find-html2pdf-links "aosabook-nginx" "https://aosabook.org/en/v2/nginx.html")

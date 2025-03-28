@@ -1,10 +1,21 @@
 ; «tmux»  (to ".tmux")
+; «sshd_config»  (to ".sshd_config")
+; «autossh»  (to ".autossh")
+
+
+; it worked here:
+(find-daily "24-03-2025.org" ".ssh-tunneling")
 
 
 
 
 
 
+
+
+
+
+; «.autossh»	(to "autossh")
 (find-man "autossh")
 (find-man "autossh" "construct a loop of ssh forwardings")
 (find-man "autossh" "a remote echo service that will echo back the test\n       data")
@@ -13,6 +24,19 @@
 
 (find-sh "autossh --help")
 
+
+
+
+
+; «.sshd_config»	(to "sshd_config")
+(find-man "sshd_config")
+(find-man "sshd_config" "/etc/ssh/sshd_config")
+(find-man "sshd_config" "ClientAliveCountMax")
+(find-man "sshd_config" "ClientAliveCountMax" "The  default  value  is 3")
+(find-man "sshd_config" "ClientAliveInterval")
+(find-fline "/ssh:root@justclaymoving.xyz:/etc/ssh/sshd_config")
+(find-fline "/ssh:root@justclaymoving.xyz:/etc/ssh/sshd_config" "ClientAliveCountMax")
+(find-fline "/ssh:root@justclaymoving.xyz:/etc/ssh/sshd_config" "ClientAliveInterval")
 
 
 

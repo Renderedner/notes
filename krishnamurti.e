@@ -2,6 +2,67 @@
 ; «drop-pleasure»  (to ".drop-pleasure")
 ; «observation-vs-accumulation»  (to ".observation-vs-accumulation")
 ; «end-sorrow»  (to ".end-sorrow")
+; «inrelisee»  (to ".inrelisee")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; «.inrelisee»	(to "inrelisee")
+(find-youtubedl-links "~/videos/" "In_relationship_I_see_what_I_am_Krishnamurti" "ZJHDoZ46jB8" ".mp4" "inrelisee")
+# (code-video "inreliseevideo" "~/videos/In_relationship_I_see_what_I_am_Krishnamurti-ZJHDoZ46jB8.mp4")
+# (eev-avadj-mode 1)
+# (find-inreliseevideo "0:00")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt")
+
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:13" "Now I say, who is me who is struggling through all this?")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:20" "Who is I, who is the self, who is…")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:24" "What makes me behave this way? Why do I react? You follow, sir?")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:30" "JS: Oh, yes, I follow you. K: So that I begin to see myself,")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:34" "not theoretically but in a mirror of relationship")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:40" "with my wife, with my friends,")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:42" "how I behave, how I think –")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:45" "in that relationship I begin to see what I am.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:48" "JS: Yes, that’s correct.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:49" "You can see yourself only through reflection in another.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:52" "K: Through relationship. JS: Relationship.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:56" "K: In that there may be affection, there may be anger,")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "2:58" "there may be jealousy")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "3:0" "– I discover in all that the monstrous creature hidden in me,")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "3:7" "including the idea that there is something")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "3:12" "extraordinarily spiritual in me,")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "3:15" "all that I begin to discover.")
+
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "4:18" "Change now!")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "4:22" "Not wait for evolution to throttle you.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "4:25" "JS: Yes. Evolution can begin now.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "4:31" "K: If you like to put it that way. Evolution in the sense")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "4:35" "moving from this, breaking down to this,")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "4:38" "to something which thought cannot project.")
+
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "6:37" "death has been one of the most extraordinary factors in life.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "6:46" "We have avoided it, to look at it, because we are afraid what it is.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "6:52" "We cling to all the things we have known,")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "6:55" "and we don’t want to let that go when we die.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "7:0" "We can’t take it with us, but… etc., etc.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "7:3" "Now to die to all the things I am attached to.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "7:13" "To die.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "7:14" "Not say, ‘What will happen if I die, is there another reward?’")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "7:21" "Because unless this… dying and living go together.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "7:27" "JS: Yes, death is part of life. K: Part of life.")
+# (find-fline "~/transcripts/inrelisee-ZJHDoZ46jB8.txt" "7:31" "K: But very few move in that direction.")
+
+
 
 
 
