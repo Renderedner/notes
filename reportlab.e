@@ -51,7 +51,8 @@
 
 
 ; «.7.-tables»	(to "7.-tables")
-;; (find-reportlabpage 85)
+;; (find-reportlabtext 85)
+;; (find-reportlabtext 85 "rowHeights argument is a sequence of numbers or possibly None")
 ;; (find-reportlabpage 86)
 ;; (find-reportlabpage 87 "TableStyle Cell Formatting Commands")
 ;; (find-reportlabpage 88 "TableStyle Line Commands")

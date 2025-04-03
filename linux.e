@@ -5,6 +5,42 @@
 ; «arch-general-recommendation»  (to ".arch-general-recommendation")
 ; «.pacman»	(to "pacman")
 ; «arch-gitlab»  (to ".arch-gitlab")
+; «ubuntudocs-routingtables»  (to ".ubuntudocs-routingtables")
+; «unixstackexchangerouteoutput»  (to ".unixstackexchangerouteoutput")
+
+
+
+
+
+; «.unixstackexchangerouteoutput»	(to "unixstackexchangerouteoutput")
+; (find-html2pdf-links "unixstackexchangerouteoutput" "https://unix.stackexchange.com/questions/433734/how-to-understand-the-output-of-route")
+(code-pdf-page  "unixstackexchangerouteoutput" "$S/https/unix.stackexchange.com/questions/433734/how-to-understand-the-output-of-route.pdf")
+(code-pdf-text8 "unixstackexchangerouteoutput" "$S/https/unix.stackexchange.com/questions/433734/how-to-understand-the-output-of-route.pdf")
+(page-utils-mode 1)
+; (find-unixstackexchangerouteoutputpage 1)
+; (find-unixstackexchangerouteoutputtext 2 "AND it with the Genmask")
+; (find-unixstackexchangerouteoutputtext 2 "This is a short and sweet example")
+
+
+
+
+; «.ubuntudocs-routingtables»	(to "ubuntudocs-routingtables")
+; (find-html2pdf-links1 "ubuntudocs-routingtables" "https://ubuntu.com/core/docs/networkmanager/routing-tables")
+(code-pdf-page  "ubuntudocs-routingtables" "$S/https/ubuntu.com/core/docs/networkmanager/routing-tables.pdf")
+(code-pdf-text8 "ubuntudocs-routingtables" "$S/https/ubuntu.com/core/docs/networkmanager/routing-tables.pdf")
+(page-utils-mode 1)
+; (find-ubuntudocs-routingtablestext 1 "It is important to understand that NetworkManager changes the routing table whenever it creates a new connection.")
+; (find-ubuntudocs-routingtablespage 2)
+
+
+
+
+
+
+
+
+
+
 
 
 
