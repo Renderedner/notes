@@ -7,6 +7,7 @@
 ; «arch-gitlab»  (to ".arch-gitlab")
 ; «ubuntudocs-routingtables»  (to ".ubuntudocs-routingtables")
 ; «unixstackexchangerouteoutput»  (to ".unixstackexchangerouteoutput")
+; «pacman-S»  (to ".pacman-S")
 
 
 
@@ -187,3 +188,13 @@
 
 ;; (find-sh "pacman -Ql gdal-ecw")
 ;; (find-sh "pacman -Ql gdal-ecw | grep \\\\.so")
+
+; «.pacman-S»	(to "pacman-S")
+ (eepitch-vterm)
+sudo pacman -Scc
+
+(find-man "pacman")
+(find-man "pacman" "SYNC OPTIONS (APPLY TO -S)")
+(find-man "pacman" "SYNC OPTIONS (APPLY TO -S)" "-c, --clean")
+(find-man "pacman" "SYNC OPTIONS (APPLY TO -S)" "-c, --clean" "Use one --clean switch to only remove packages\n           that are no longer installed")
+(find-man "pacman" "SYNC OPTIONS (APPLY TO -S)" "-c, --clean" "use two to remove all files from the\n           cache")

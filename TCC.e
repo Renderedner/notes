@@ -1,9 +1,228 @@
 # «mikeleving-repldriven»  (to ".mikeleving-repldriven")
+# «clean-code-vs-liberdade»  (to ".clean-code-vs-liberdade")
+# «parallel-branches-example»  (to ".parallel-branches-example")
 
 
 
 
 
+
+# «.parallel-branches-example»	(to "parallel-branches-example")
+(find-telegachatm "272098718#66676")
+Fazendo um exemplo de código em duas branches paralelas..
+
+ (eepitch-vterm)
+rm   -rf /tmp/meta-package/
+mkdir -p /tmp/meta-package/
+cd /tmp/meta-package/
+curl https://raw.githubusercontent.com/Renderedner/elisp/refs/heads/main/meta-package/main.el            > main.el
+curl https://raw.githubusercontent.com/Renderedner/elisp/refs/heads/main/meta-package/parallel-commit.el > parallel-commit.el
+
+# (find-configfile "meta-package/main.el"            "defvar _mc-original-branch")
+# (find-configfile "meta-package/parallel-commit.el" "defun _mc-get-git-root-dir")
+ (add-to-list 'load-path "~/tmp/meta-package/")
+ (load "parallel-commit.el")
+ (defun _mc-get-git-root-dir () "/tmp/meta-teste/")
+ (setq _mc-original-branch "master")
+ (setq _mc-sync-log-file-name "meta/.meta_sync_log")
+
+ (eepitch-vterm)
+rm -rf   /tmp/meta-teste/
+mkdir -p /tmp/meta-teste/
+cd       /tmp/meta-teste/
+# python -m venv .venv
+# source .venv/bin/activate
+# pip install flask
+# (find-notes "flask.e" ".flask-quickstart" "Save it as hello.py")
+echo "\
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route(\"/\")
+def hello_world():
+    return \"<p>Hello, World\!</p>\"
+" > app.py
+echo -e "meta/" > .gitignore
+git init
+git add app.py
+git add .gitignore
+git commit -m "Primeiro commit com código original"
+ (setq ___temp_hash_primeiro_commit (_mc-get-last-commit-hash))
+git branch
+
+
+git branch meta
+git checkout meta
+git branch
+cat app.py
+echo "\
+from flask import Flask
+
+app = Flask(__name__)
+
+# ( Isso é um elemento adicional \\/
+# (find-notes \"flask.e\" \".flask-quickstart\" \"Save it as hello.py\")
+@app.route(\"/\")
+def hello_world():
+    return \"\"\"<p>Hello, World\!</p>
+              <p>Isso não é um elemento adicional</p>\"\"\"
+" > app.py
+git diff app.py
+git add app.py
+echo "" > .gitignore 
+git add .gitignore
+git commit -m "Segundo commit no branch meta, com conteúdo adicional"
+
+# (find-configfile "meta-package/parallel-commit.el" "defvar _mc-sync-log-file-name")
+# (find-configfile "meta-package/parallel-commit.el" "defun _mc-get-last-sync-meta-hash")
+# (find-configfile "meta-package/parallel-commit.el" "original: <hash> | meta: <hash_to_be_returned> | type: <parallel-commit|merge>\\")
+git log # hash do primeiro commit
+mkdir -p meta
+ (eepitch-line (format "echo \"original: %s | meta: %s | type: parallel-commit\" > meta/.meta_sync_log" ___temp_hash_primeiro_commit ___temp_hash_primeiro_commit))
+git add meta/.meta_sync_log
+git commit -m "adicionando arquivo com histórico de sincronização"
+
+# (find-configfile "meta-package/parallel-commit.el" "defun mc-parallel-commit-1")
+# (_mc-get-list-of-branches)
+# (_mc-get-git-root-dir)
+ (mc-parallel-commit-1)
+cat meta/.meta_sync_log
+git status
+cat app.py
+
+git add app.py
+rm .meta_sync_log
+git restore .gitignore
+git status
+git commit -m "Terceiro commit sincronizando os branches"
+
+echo '\
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return """<p>Hello, World!</p>
+              <p>Isso não é um elemento adicional</p>
+              <p>Mais uma adição, feita do orignal Branch</p>"""
+' > app.py
+cat app.py
+git add app.py
+git commit -m "Quarto commit des-sincronizando as branches"
+
+git checkout meta
+git merge master 
+cat app.py
+echo '
+from flask import Flask
+
+app = Flask(__name__)
+
+# ( Isso é um elemento adicional \/
+# (find-notes "flask.e" ".flask-quickstart" "Save it as hello.py")
+@app.route("/")
+def hello_world():
+    return """<p>Hello, World!</p>
+              <p>Isso não é um elemento adicional</p>
+              <p>Mais uma adição, feita do orignal Branch</p>"""
+' > app.py
+git status
+git add app.py
+git status
+git commit -m "Quinto commit sincronizando as duas branches"
+
+git checkout master; cat app.py
+git checkout meta;   cat app.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# «.clean-code-vs-liberdade»	(to "clean-code-vs-liberdade")
+(find-telegachatm "272098718#66674")
+
+# https://www.hostgator.com.br/blog/clean-code-o-que-e/
+Sobre oque é aceitável, e oque não é aceitável na comunidade de desenvolvimento.
+
+Existem boas práticas que são de conhecimento bem difundido na comunidade de desenvolvedores na internet.
+Principalmente quando essa área teve um crescimento enorme, onde haviam muitas vagas para esse tipo de emprego,
+e todos estava afim de entrar pra área. Isso movimentou muita conteúdo, e nutriu bastante esses padrões que
+ficaram bem estabelecidos, e caso você tenha a expectativa de colaborar em algum projeto grande, famoso, é
+preciso aderir a eles.
+
+Mas acontece também que isso criou uma imagem meio engessada de como se pode desenvolver software, e aí, qualquer
+coisa que foge desse padrão bem estabelecida, está errado, mesmo antes de se considerar qual valor aquilo pode
+ter.
+
+Existe a noção de Clean Code, onde algumas regras são postas para serem seguidas. As regras fazem sentido,
+mas elas impossibilitam determinadas coisas que também fazem sentido em outro contexto. Por exemplo as seguintes
+3 coisas: 'Comente apenas o necessário', 'Tratamento de Erros', 'Testes unitários'. 
+
+Manter apenas os comentários mais necessários, e manter o minimo de comentários possíveis, faz sentido pensando
+que ao longo do desenvolvimento pessoas vão fuçar no código, mas não vão adaptar o comentário. Mas existem
+contextos onde os comentários são extremamente relevantes, e não faz sentido modificar o código sem modificar o
+comentário. Sendo que nos comentários podem ser incluídos vários elementos interessantes, como testes e links.
+
+Tratamento de erro também é super importante no contexto de uma programa em produção, mas existem programas, que
+mesmo depois de prontos, convém que não tenham alguns tratamentos de erros, sendo esperado do usuário que entenda
+que o programa parou, e convidando-o a investigar o porque e a entender o funcionamento interno do programa. São
+programas que não são populares, que demandam um maior nível de envolvimento por parte do usuário, mais doque
+simplesmente baixar, e clicar em botões intuitivos, esses programas demandam algum tipo de iniciação.
+
+Testes unitários envolvem o desenvolvimento de testes que balizam o desenvolvimento do software em sí. Então
+costumam ser escritos antes do próprio código, como uma especificação doque o código deve fazer, e enquanto o
+programa está sendo desenvolvido, sabe-se que se ele não passar nos testes, não está correto. O paradigma Clean
+diz que estes testes precisam ser rápidos, independentes entre sí, repetíveis, não-ambiguos, devem ser escritos
+a tempo.
+
+Existem outros tipos de testes que podem ser implementados, e que fogem à esses critérios. Os testes que tenho em
+mente são desenvolvidos paralelamente ao próprio código, e podem ser contidos justamente nos comentários do
+código sendo desenvolvido, como um elementeo adicional. Não faz sentido que sejam escritos antes do código principal,
+pois são desenvolvidos de uma forma REPL-based, então o desenvolvimento do código depende do teste, e o do teste
+depende do código.
+
+Aqui está um exemplo de como um teste desses pode ser. Onde uma endpoint em um servidor é difinido como uma função
+em python, e um bloco de comentários multi-linha acima da função, contém instruções para rodar o servidor localmente
+e 3 hyperlinks para testar esse endpoint:
+``` Python
+"""
+ (eepitch-vterm)
+conda activate arcgis2
+flask run
+(find-firefox "http://127.0.0.1:5000/get_laudo_social")
+(find-firefox "http://127.0.0.1:5000/get_laudo_social?FID=12")
+(find-firefox "http://127.0.0.1:5000/get_laudo_social?FID=5000")
+"""
+from doc_builder import build_doc
+@app.route('/get_laudo_social/')
+def download_file():
+    FID = request.args.get('FID', None)
+    if not FID:
+        return "Não teve FID irmão"
+
+    file_path = build_doc(FID)
+    if not file_path:
+        return "<h1>Não gerou o PDF, entre em contato com o Bruno</h1>"
+    return send_file(file_path, as_attachment=True)
+```
+
+Isso é para exemplificar que há um cultura doque pode ou não pode entrar no código fonte de um programa, que impõe
+à criatividade, e ao que pode ser feito para o processo de desenvolvimento ser algo que condiz mais com o funcionamento
+peculiar de cada um.
+
+Obs:. 
+Me lembro dos princípios SOLID. Mas vendo aqui, imediatamente não me surge essa questão com isso.
 
 
 

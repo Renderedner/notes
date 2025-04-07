@@ -42,10 +42,16 @@
 (find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "25:40" "side of a lack. If you lack a warrior  initiation, you’re going to be passive,  ")
 (find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "25:48" "ineffectual, and masochistic. You’re going  to be in a dance with a sadist. Because even  ")
 
-(find-rmoore-maturemasculinityvideo "28:33" "you will be paranoid when you see men who are  paranoid. These are men who have not been able  ")
-(find-rmoore-maturemasculinityvideo "28:42" "to learn to access this legitimate archetypal  emotional energy and channel it effectively.")
-(find-rmoore-maturemasculinityvideo "28:54" "And of course, a person like that  is very sensitive to humiliation. If  ")
-(find-rmoore-maturemasculinityvideo "29:4" "you are highly sensitive to being  shamed and easily moved to rage,  ")
-(find-rmoore-maturemasculinityvideo "29:13" "that’s a sign of the lack of a warrior initiation.")
+(find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "28:33" "you will be paranoid when you see men who are  paranoid. These are men who have not been able  ")
+(find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "28:42" "to learn to access this legitimate archetypal  emotional energy and channel it effectively.")
+(find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "28:54" "And of course, a person like that  is very sensitive to humiliation. If  ")
+(find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "29:4" "you are highly sensitive to being  shamed and easily moved to rage,  ")
+(find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "29:13" "that’s a sign of the lack of a warrior initiation.")
 
-(find-rmoore-maturemasculinityvideo "55:18")
+(find-fline "~/transcripts/rmoore-maturemasculinity-F_ZstPwCOhA.txt" "55:18")
+
+(find-rmoore-maturemasculinityvideo "65:42" "Courage is a Warrior virtue. Prudence—the ability to think  ")
+(find-rmoore-maturemasculinityvideo "65:49" "about the future implications of  your actions—is a Magician virtue. ")
+(find-rmoore-maturemasculinityvideo "65:55" "Temperance—the ability not to be undone by  the pleasures you seek—is a Lover virtue. ")
+(find-rmoore-maturemasculinityvideo "66:5" "But Justice is a Royal virtue. At its deepest level, the Mythic  ")
+(find-rmoore-maturemasculinityvideo "66:15" "Reality of the King archetype holds a  longing to move toward a just order.")

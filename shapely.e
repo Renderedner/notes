@@ -26,6 +26,7 @@
 
 ; «.creation»	(to "creation")
 ; (find-shapelydoc "creation")
+; (find-shapelydoc "reference/shapely.polygons#shapely.polygons")
 
 ; «.manual»	(to "manual")
 ; (find-shapelydoc "manual#shapely.ops.transform")
