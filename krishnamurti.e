@@ -124,7 +124,7 @@ https://www.youtube.com/watch?v=x6QGd-7BbW0
 ; (find-jk-last-talkvideo "6:37" "and if you have made a mess of your life, change it!")
 ; (find-jk-last-talkvideo "6:45" "Change it today, not tomorrow.")
 ; (find-jk-last-talkvideo "6:50" "If you are uncertain, find out why and be certain.")
-; (find-jk-last-talkvideo "7:1" "If your thinking is not straight, think straightly, logically.")
+; (find-jk-last-talkvideo "7:01" "If your thinking is not straight, think straightly, logically.")
 ; (find-jk-last-talkvideo "7:9" "Unless all that is prepared, all that is settled,")
 ; (find-jk-last-talkvideo "7:13" "you can't enter into this world")
 ; (find-jk-last-talkvideo "7:16" "into the world of creation.")
